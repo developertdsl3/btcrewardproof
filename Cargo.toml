@@ -6,6 +6,8 @@ members = [
     "Real_time_ltv",
     "program",
     "script",
+    "user_balance",
+    "Catalysis"
 ]
 resolver = "2"
 

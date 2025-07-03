@@ -22,6 +22,17 @@ sol! {
         uint32 real_time_ltv;
         
     }
+
+    struct PublicValuesAddress {
+        address user_address;
+    }
+
+    struct PublicValuesCatalyst{
+        address user_address;
+        uint32 reward_amount;
+    }
+
+    
 }
 
 const SCALE: u64 = 100; // Supports two decimal places
@@ -70,3 +81,5 @@ pub fn real_time_ltv(
     let collateral_value = collateral_amount as u64 * btc_price_usd as u64;
     ((debt_amount as u64 * SCALE) / collateral_value) as u32
 }
+
+
